@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "click_segment_core"
+version = "0.1.0"
+description = "Core logic for click-to-segment point cloud project: geometric clustering, SAM-based 2D-to-3D projection, and PointNet++"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "open3d",
+    "opencv-python",
+]
+
+[tool.setuptools]
+packages = ["click_segment_core"]
+package-dir = {"click_segment_core" = "."}
